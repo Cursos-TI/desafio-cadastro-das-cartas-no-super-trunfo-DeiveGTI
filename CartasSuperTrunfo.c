@@ -3,7 +3,7 @@
 
 struct CartaSuperTrunfo {
     char estado;
-    char codigo[4]; // 3 caracteres + '\0'
+    char codigo[4];
     char nomeCidade[50];
     int populacao;
     float area;
@@ -35,7 +35,7 @@ void lerCarta(struct CartaSuperTrunfo *carta, int numeroCarta) {
     
     // Nome da Cidade
     printf("Nome da Cidade: ");
-    scanf(" %[^\n]", carta->nomeCidade); // Lê até encontrar uma nova linha
+    scanf(" %[^\n]", carta->nomeCidade); 
     
     // População
     printf("População: ");
